@@ -6,7 +6,7 @@ if ! hash stow > /dev/null 2>&1 ; then
 fi
 
 # POSIX sh doesn't have arrays, so set args instead
-set -- vim 
+set -- vim zsh
 for dir; do
 	stow $dir
 	shift
